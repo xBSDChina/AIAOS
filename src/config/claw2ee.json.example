@@ -1,0 +1,21 @@
+{
+  "port": 8082,
+  "host": "0.0.0.0",
+  "logLevel": "info",
+  "models": ["nvidia", "openrouter", "moonshot", "local"],
+  "llm": {
+    "openrouter": {
+      "apiKey": "YOUR_OPENROUTER_API_KEY_HERE"
+    },
+    "moonshot": {
+      "apiKey": "YOUR_MOONSHOT_API_KEY_HERE"
+    },
+    "nvidia": {
+      "apiKey": "YOUR_NVIDIA_API_KEY_HERE"
+    }
+  },
+  "mcp": {
+    "enabled": true,
+    "port": 8082
+  }
+}

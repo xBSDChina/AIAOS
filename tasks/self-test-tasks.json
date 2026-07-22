@@ -1,0 +1,176 @@
+{
+  "version": "1.0",
+  "created_at": "2026-04-27T18:30:00Z",
+  "test_source": "MCP autonomous planning",
+  "test_goal": "AIAOS bootstrap capability and basic OS operations testing",
+  "tests": {
+    "claw2ee_tests": [
+      {
+        "id": "TEST-C2E-001",
+        "name": "Claw2ee Service Health Check",
+        "description": "Verify Claw2ee v7.0 service is running and responding",
+        "category": "health",
+        "priority": "critical",
+        "test_method": "HTTP GET /health",
+        "expected": {"status": "healthy", "service": "claw2ee"},
+        "layer": 0
+      },
+      {
+        "id": "TEST-C2E-002", 
+        "name": "G-HICS-AM Theory Validation",
+        "description": "Verify G-HICS-AM theory is loaded with 8 axioms",
+        "category": "theory",
+        "priority": "high",
+        "test_method": "API /api/v1/tools/ghics_am_status",
+        "expected": {"theory": "G-HICS-AM", "axioms": 8},
+        "layer": 0
+      },
+      {
+        "id": "TEST-C2E-003",
+        "name": "Layer L0-L5 Initialization",
+        "description": "Verify all 6 G-HICS layers are initialized",
+        "category": "initialization",
+        "priority": "high",
+        "test_method": "API layer inspection",
+        "expected": {"layers": ["L0", "L1", "L2", "L3", "L4", "L5"]},
+        "layer": 0
+      },
+      {
+        "id": "TEST-C2E-004",
+        "name": "MCP Port Connectivity",
+        "description": "Test MCP communication ports for each layer",
+        "category": "connectivity",
+        "priority": "medium",
+        "test_method": "Port scan and service check",
+        "expected": {"mcp_ports": 6},
+        "layer": 0
+      },
+      {
+        "id": "TEST-C2E-005",
+        "name": "Inner Loop Control Test",
+        "description": "Test L2->L3->L2 control loop",
+        "category": "control",
+        "priority": "high",
+        "test_method": "API call sequence",
+        "expected": {"innerLoop": "active"},
+        "layer": 1
+      }
+    ],
+    "omnicode_tests": [
+      {
+        "id": "TEST-OMC-001",
+        "name": "OmniCode MCP Service Health",
+        "description": "Verify OmniCode MCP server is running",
+        "category": "health",
+        "priority": "critical",
+        "test_method": "HTTP GET /health",
+        "expected": {"status": "ok"},
+        "layer": 0
+      },
+      {
+        "id": "TEST-OMC-002",
+        "name": "Code Generation Tool Available",
+        "description": "Verify omnicode_generate tool is registered",
+        "category": "tools",
+        "priority": "high",
+        "test_method": "API GET /tools",
+        "expected": {"tools": ["omnicode_generate"]},
+        "layer": 0
+      },
+      {
+        "id": "TEST-OMC-003",
+        "name": "Template Support Check",
+        "description": "Verify supported templates (Flask, FastAPI, etc.)",
+        "category": "compatibility",
+        "priority": "medium",
+        "test_method": "Tool introspection",
+        "expected": {"templates": ["flask-rest", "fastapi-crud", "django-api", "react-frontend"]},
+        "layer": 8
+      }
+    ],
+    "aiaos_tests": [
+      {
+        "id": "TEST-AIAOS-001",
+        "name": "AIAOS Core Bootstrap",
+        "description": "Verify aiaos-core.py can initialize all layers",
+        "category": "bootstrap",
+        "priority": "critical",
+        "test_method": "python3.11 aiaos-core.py",
+        "expected": {"status": "operational"},
+        "layer": 0
+      },
+      {
+        "id": "TEST-AIAOS-002",
+        "name": "Layer 1 - LLM Chaos Isolation",
+        "description": "Test isolation factor and randomness blocking",
+        "category": "isolation",
+        "priority": "high",
+        "test_method": "layer1_isolate()",
+        "expected": {"isolation_factor": 0.85, "randomness_blocked": true},
+        "layer": 1
+      },
+      {
+        "id": "TEST-AIAOS-003",
+        "name": "Layer 2 - Entropy Reduction",
+        "description": "Test entropy score and consistency",
+        "category": "calibration",
+        "priority": "high",
+        "test_method": "layer2_calibrate()",
+        "expected": {"entropy_score": "<0.2", "consistency": "high"},
+        "layer": 2
+      },
+      {
+        "id": "TEST-AIAOS-004",
+        "name": "Layer 4 - Context Persistence",
+        "description": "Test checkpoint saving and recovery",
+        "category": "persistence",
+        "priority": "high",
+        "test_method": "layer4_persistence()",
+        "expected": {"context_id": "generated", "status": "saved"},
+        "layer": 4
+      },
+      {
+        "id": "TEST-AIAOS-005",
+        "name": "MCP Inter-Engine Communication",
+        "description": "Test Claw2ee <-> OmniCode messaging",
+        "category": "mcp",
+        "priority": "critical",
+        "test_method": "Bidirectional API calls",
+        "expected": {"communication": "bidirectional_ok"},
+        "layer": 0
+      },
+      {
+        "id": "TEST-AIAOS-006",
+        "name": "Log System Functionality",
+        "description": "Verify logging to aiaos.log",
+        "category": "infrastructure",
+        "priority": "medium",
+        "test_method": "Check log file existence and write",
+        "expected": {"log_file": "exists", "writable": true},
+        "layer": 0
+      },
+      {
+        "id": "TEST-AIAOS-007",
+        "name": "Directory Structure Validation",
+        "description": "Verify all required directories exist",
+        "category": "infrastructure",
+        "priority": "medium",
+        "test_method": "ls and path validation",
+        "expected": {"directories": 11},
+        "layer": 0
+      },
+      {
+        "id": "TEST-AIAOS-008",
+        "name": "Configuration Loading",
+        "description": "Test aiaos-config.json loading",
+        "category": "config",
+        "priority": "high",
+        "test_method": "Config file parsing",
+        "expected": {"version": "0.1.0-alpha", "layers": 9},
+        "layer": 0
+      }
+    ]
+  },
+  "total_tests": 16,
+  "execution_order": ["critical", "high", "medium"]
+}

@@ -1,0 +1,60 @@
+{
+  "version": "0.1.0-alpha",
+  "claw2ee": {
+    "url": "http://localhost:8082",
+    "enabled": true
+  },
+  "omnicode": {
+    "url": "http://localhost:8765",
+    "enabled": true
+  },
+  "layers": {
+    "layer1": {
+      "enabled": true,
+      "name": "LLM Chaos Isolation Layer",
+      "type": "isolation"
+    },
+    "layer2": {
+      "enabled": true,
+      "name": "Entropy Reduction Calibration Layer",
+      "type": "calibration"
+    },
+    "layer3": {
+      "enabled": true,
+      "name": "Monitor Adapter Layer",
+      "type": "monitor"
+    },
+    "layer4": {
+      "enabled": true,
+      "name": "Task Engine Layer",
+      "type": "engine"
+    },
+    "layer5": {
+      "enabled": true,
+      "name": "Strategy Layer",
+      "type": "strategy"
+    }
+  },
+  "mcp": {
+    "enabled": true,
+    "port": 8082
+  },
+  "llm": {
+    "default": "nvidia",
+    "providers": {
+      "nvidia": {
+        "api_key": "YOUR_NVIDIA_API_KEY",
+        "base_url": "https://integrate.api.nvidia.com/v1"
+      },
+      "openrouter": {
+        "api_key": "YOUR_OPENROUTER_API_KEY"
+      },
+      "moonshot": {
+        "api_key": "YOUR_MOONSHOT_API_KEY"
+      },
+      "local": {
+        "base_url": "http://localhost:11434"
+      }
+    }
+  }
+}

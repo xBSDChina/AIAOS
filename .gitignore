@@ -1,0 +1,99 @@
+# Build artifacts
+*.o
+*.core
+*.so
+bin/
+obj/
+
+# Logs and runtime files
+*.log
+logs/
+*.pid
+
+# Cache and temporary files
+cache/
+tmp/
+temp/
+*.tmp
+*.bak
+*.bak3
+.unchanged
+.body
+.pyc
+__pycache__/
+
+# User-specific configuration (do not commit secrets)
+config/local.json
+config/private.json
+*.secret
+*.key
+
+# VM and deployment specific
+deployment.log
+recover-*.sh
+start-*.sh
+bootstrap-phase-*.sh
+
+# Memory and status (runtime)
+memory/
+status/
+checkpoints/
+ctx_*.json
+objective-engine.body
+objective-engine.core
+task-chain-engine.core
+*.unchanged
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS generated
+.DS_Store
+Thumbs.db
+
+# Sensitive data (never commit)
+openclaw.json
+*aiaos-config.json
+*claw2ee.json
+*secrets.json
+*credentials.json
+*.pem
+*.key
+.env
+
+# Test artifacts
+test-output/
+coverage/
+
+# Objective engine binaries (Chicken compiled)
+objective-engine
+omnicode-bridge
+claw2ee-bridge
+
+# Chicken compiled binaries
+*.so
+*.o
+*.html
+*.js
+
+# Egg cache
+.chicken/
+
+# Vendor
+vendor/
+
+# Composer
+composer.lock
+
+# Node
+node_modules/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
