@@ -21,7 +21,7 @@
 
 ```bash
 # Clone and setup
-git clone https://github.com/your-org/aiaos.git
+git clone https://github.com/xBSDChina/AIAOS.git
 cd aiaos
 
 # Install Chicken Scheme 5.4.0+ dependencies
@@ -147,7 +147,7 @@ MIT License - see [LICENSE](LICENSE) file.
 
 ```bash
 # 克隆并配置
-git clone https://github.com/your-org/aiaos.git
+git clone https://github.com/xBSDChina/AIAOS.git
 cd aiaos
 
 # 安装 Chicken Scheme 依赖 (5.4.0+)
