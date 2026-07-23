@@ -1,0 +1,76 @@
+{
+  "version": "1.0.0",
+  "description": "AIAOS Framework Configuration - LLM API keys and system settings",
+  "llm": {
+    "default_provider": "nvidia",
+    "providers": {
+      "nvidia": {
+        "name": "NVIDIA NIM",
+        "endpoint": "https://integrate.api.nvidia.com/v1/chat/completions",
+        "embedding_endpoint": "https://integrate.api.nvidia.com/v1/embeddings",
+        "default_model": "nvidia/deepseek-ai/deepseek-v3.1-terminus",
+        "api_key_env": "NVIDIA_API_KEY",
+        "temperature": 0.7,
+        "max_tokens": 4000,
+        "timeout": 60
+      },
+      "openrouter": {
+        "name": "OpenRouter",
+        "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+        "embedding_endpoint": "https://openrouter.ai/api/v1/embeddings",
+        "default_model": "openrouter/auto",
+        "api_key_env": "OPENROUTER_API_KEY",
+        "temperature": 0.7,
+        "max_tokens": 4000,
+        "timeout": 60
+      },
+      "local": {
+        "name": "Local LLM (Ollama)",
+        "endpoint": "http://localhost:11434/api/chat",
+        "embedding_endpoint": "http://localhost:11434/api/embeddings",
+        "default_model": "qwen3:32b",
+        "api_key": null,
+        "temperature": 0.7,
+        "max_tokens": 4000,
+        "timeout": 120
+      }
+    }
+  },
+  "claw2ee": {
+    "mcp_endpoint": "http://localhost:3004/api/v1/tools",
+    "ghics_am_version": "L5",
+    "audit_enabled": true,
+    "auto_submit": true
+  },
+  "omnicode": {
+    "max_decomposition_depth": 3,
+    "subtasks_per_task": 5,
+    "audit_required": true,
+    "checkpoint_timeout": 300,
+    "auto_execute": false
+  },
+  "web": {
+    "port": 8080,
+    "enable_ssl": false,
+    "ssl_cert": null,
+    "ssl_key": null,
+    "cors_enabled": true,
+    "allowed_origins": ["*"],
+    "refresh_interval": 3
+  },
+  "system": {
+    "data_dir": "${HOME}/aiaos/data",
+    "logs_dir": "${HOME}/aiaos/logs",
+    "workspace_dir": "${HOME}/aiaos/workspace",
+    "max_log_files": 100,
+    "log_level": "info",
+    "backup_interval": 3600,
+    "health_check_interval": 60
+  },
+  "security": {
+    "require_api_key": false,
+    "api_keys": [],
+    "allowed_ips": ["127.0.0.1", "::1"],
+    "rate_limit": 100
+  }
+}

@@ -65,7 +65,7 @@ AIAOS implements a **five-level task hierarchy**:
 - **L2 - Gateway**: Platform entry, module entry, dashboard systems
 - **L3 - Adapter/Engine**: FreeBSD adapter, MCP protocol, monitor engine, UTE task engine
 - **L4 - Modules**: Pool, auto-enhancement, iterative generation, linkage core
-- **L5 - Strategy**: Longzhong (strategic vision) and TenVictories (tactical analysis)
+- **L5 - Strategy**: Brains Model
 
 Each task undergoes **four audit checkpoints**: PRE_EXEC, POST_EXEC, AUDIT, FINAL, ensuring G-HICS-AM L5 compliance.
 
@@ -191,7 +191,7 @@ AIAOS 采用 **五级任务层级**：
 - **L2 - 网关层**: 平台入口、模块入口、大屏系统
 - **L3 - 适配/引擎层**: FreeBSD 适配器、MCP 协议、监控引擎、UTE 任务引擎
 - **L4 - 模块层**: 任务池、自增强、迭代生成、联动核心
-- **L5 - 战略层**: 隆中對 (Longzhong, 战略愿景) 与 十勝十敗 (TenVictories, 战术分析)
+- **L5 - 战略层**: 智库模块
 
 每个任务执行 **四个审计检查点**: PRE_EXEC、POST_EXEC、AUDIT、FINAL，确保 G-HICS-AM L5 合规。
 
