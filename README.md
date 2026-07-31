@@ -6,7 +6,7 @@
 
 ## English
 
-**AIAOS** (Autonomous Intelligent Agent Operating System) is an enterprise-grade framework built with Chicken Scheme, designed for autonomous task execution, multi-level orchestration, and real-time monitoring.
+**AIAOS** (Autonomous Intelligent Agent Operating System) is an enterprise-grade framework built with Chicken Scheme, designed for autonomous task execution, multi-level orchestration, and real-time monitoring. Based on Self-evolving skills technology
 
 ### Features
 
@@ -132,7 +132,7 @@ MIT License - see [LICENSE](LICENSE) file.
 
 ## AIAOS 企业级框架
 
-**AIAOS** (Autonomous Intelligent Agent Operating System) 是基于 Chicken Scheme 构建的企业级自主任务执行框架，支持多级编排、实时监控和 G-HICS-AM L5 审计合规。
+**AIAOS** (Autonomous Intelligent Agent Operating System) 是基于 Chicken Scheme 构建的企业级自主任务执行框架，支持多级编排、实时监控和 G-HICS-AM L5 审计合规。基于的自进化skills技术。
 
 ### 核心特性
 
