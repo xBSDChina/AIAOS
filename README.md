@@ -6,6 +6,38 @@
 
 ## English
 
+**AIAOS** is a next-generation, agent-based universal self-evolving operating system. Its features include:
+
+- **Self-evolution**
+- **Self-adaptation**
+- **Autonomous task orchestration**
+- **Unattended continuous operation**
+
+---
+
+## Super Easy to Use
+
+The following modes are **independent**:
+
+### Mode 1 — Direct Agent Integration
+Just paste this project's URL directly into your agent and let it auto-adapt. Tell the agent that future tasks can call `AIAOS`, and it will automatically adjust.
+
+### Mode 2 — Independent Agent Deployment
+Paste this project into the agent, deploy it in a VM/Container on its own, and tasks can be called by the agent itself, or sent to the `AIAOS` framework in the VM/Container to complete automatically.
+
+### Mode 3 — Independent CLI
+Paste this project into the agent, have it write an `AIAOS` CLI, then start this CLI independently to use the `AIAOS` framework.
+
+---
+
+## Enterprise-Level Components
+
+The `AIAOS` framework includes the following enterprise-level components:
+
+- **`claw2ee`** — Autonomous task orchestration
+- **`omniCode`** — Enterprise templates
+
+
 **AIAOS** (Autonomous Intelligent Agent Operating System) is an enterprise-grade framework built with Chicken Scheme, designed for autonomous task execution, multi-level orchestration, and real-time monitoring. Based on Self-evolving skills technology
 
 ### Features
@@ -131,6 +163,41 @@ MIT License - see [LICENSE](LICENSE) file.
 <a name="aiaos-企业级框架"></a>
 
 ## AIAOS 企业级框架
+
+# AIAOS — 下一代智能体驱动通用自进化操作系统
+
+**AIAOS** 是一款基于智能体（Agent）的通用自进化操作系统，具备以下核心能力：
+
+- **自我进化（Self-Evolution）**
+- **自适应（Self-Adaptation）**
+- **自主任务编排（Autonomous Task Orchestration）**
+- **无人值守持续运行（Unattended Continuous Operation）**
+
+---
+
+## 极简使用方式（以下模式相互独立）
+
+### 模式一：直接接入 Agent
+只需将本项目仓库地址粘贴至你的 Agent 中，使其自动适配。  
+告知 Agent，后续所有任务均可调用 `AIAOS`，系统将自动完成调度与执行。
+
+### 模式二：独立部署 Agent
+将本项目完整内容导入 Agent，并在独立的虚拟机或容器中完成部署。  
+此后，任务既可由 Agent 自身调用，也可发送至运行中的 `AIAOS` 框架，由框架自动完成。
+
+### 模式三：独立 CLI 工具
+将本项目内容提供给 Agent，由 Agent 生成 `AIAOS` 的命令行工具（CLI）。  
+之后即可独立启动该 CLI，直接使用 `AIAOS` 框架的全部功能。
+
+---
+
+## 企业级组件
+
+`AIAOS` 框架内置两大企业级核心组件：
+
+- **`claw2ee`** — 自主任务编排引擎  
+- **`omniCode`** — 企业级模板管理
+
 
 **AIAOS** (Autonomous Intelligent Agent Operating System) 是基于 Chicken Scheme 构建的企业级自主任务执行框架，支持多级编排、实时监控和 G-HICS-AM L5 审计合规。基于的自进化skills技术。
 
