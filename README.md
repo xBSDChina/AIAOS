@@ -2,6 +2,10 @@
 
 [English](#aiaos-enterprise-framework) | [中文](#aiaos-企业级框架)
 
+** Global AIAOS self-evolving LIVE SHOW experience station(only for test): [https://cdn.sme001.com](
+https://cdn.sme001.com) ***
+
+
 ---
 
 ## English
@@ -161,6 +165,8 @@ MIT License - see [LICENSE](LICENSE) file.
 ## 中文 / 繁體中文
 
 <a name="aiaos-企业级框架"></a>
+
+** 全球直播aoaos agent自进化体验站(仅供测试）: [https://cdn.sme001.com](https://cdn.sme001.com) **
 
 ## AIAOS 企业级框架
 
