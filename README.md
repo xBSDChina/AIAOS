@@ -166,7 +166,7 @@ MIT License - see [LICENSE](LICENSE) file.
 
 <a name="aiaos-企业级框架"></a>
 
-** 全球直播aoaos agent自进化体验站(仅供测试）: [https://cdn.sme001.com](https://cdn.sme001.com) **
+** 全球直播aiaos agent自进化体验站(仅供测试）: [https://cdn.sme001.com](https://cdn.sme001.com) **
 
 ## AIAOS 企业级框架
 
