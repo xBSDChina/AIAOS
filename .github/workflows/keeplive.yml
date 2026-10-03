@@ -1,0 +1,15 @@
+name: Keep Space Alive
+on:
+  schedule:
+    - cron: '*/10 * * * *'   # 每 10 分钟一次
+  workflow_dispatch:
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Ping HF Space
+        run: |
+          curl -fsSL --max-time 30 \
+            "https://aihub-run.gitcode.com/online-space/ebb6683f19844bb3a3241120d0a40bcc" \
+            -o /dev/null
